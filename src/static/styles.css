@@ -80,18 +80,6 @@ section h3 {
   border-top: 1px solid #ddd;
 }
 
-.participants-section ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 8px;
-}
-
-.participants-section li {
-  padding: 4px 0;
-  color: #555;
-  font-size: 14px;
-}
-
 .participants-section em {
   color: #999;
 }
@@ -156,6 +144,42 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.participants-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-top: 8px;
+}
+
+.participants-list li {
+  padding: 4px 0;
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.participant-email {
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 4px 8px;
+  transition: transform 0.2s;
+  color: #c62828;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+  background-color: transparent;
 }
 
 footer {
